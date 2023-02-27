@@ -1,0 +1,56 @@
+$shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+$box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+$color-blue: #0574FF;
+$color-green: #7EC937;
+$color-red: #F23838;
+$color-light: #FFF;
+$color-dark: #333333;
+$color-gray: #666666;
+$color-yellow: #F29F05;
+$color-bg: #E5E5E5;
+$color-shadow: #0000001A;
+
+
+$font-size-base: 16px;
+
+$size-xs: 5px;
+$size-sm: 10px;
+$size-md: 20px;
+$size-lg: 40px;
+$size-xl: 60px;
+$size-xxl: 80px;
+$size-db-xl: 150px;
+
+$radius-md: 5px;
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint==tablet {
+    @media only screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+}
+
+@mixin container(){
+  width: 90%;
+  margin: auto;
+  @include responsive(mobile){
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@mixin container_mini(){
+  width: 1040px;
+  margin: auto;
+  @include responsive(mobile){
+    width: 100%;
+    overflow: hidden;
+  }
+}
