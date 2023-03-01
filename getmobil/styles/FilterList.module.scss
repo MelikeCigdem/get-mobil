@@ -1,0 +1,8 @@
+@use "./helpers";
+.acordion{
+  margin-top: helpers.$size-md;
+  margin-left: helpers.$size-md;
+}
+.progress_input{
+  margin-top: helpers.$size-md;
+}

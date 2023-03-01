@@ -1,0 +1,21 @@
+@use "./helpers";
+.home{
+  width: 90%;
+  margin: auto;
+}
+.comp{
+  margin-left: unset;
+  .filter{
+    @include helpers.responsive(mobile) {
+      display: none;
+    }
+  }
+  .production_list{
+    @include helpers.responsive(mobile) {
+      width: 100%;
+      max-width: 100%;
+      flex-basis: 100%;
+      padding-left: 30px;
+    }
+  }
+}

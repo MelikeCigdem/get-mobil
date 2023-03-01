@@ -1,0 +1,46 @@
+@use "./helpers";
+.banner_comp_full{
+  @include helpers.responsive(mobile) {
+    max-width: 100%;
+    display: block;
+  }
+  .banner_one{
+    @include helpers.responsive(mobile) {
+      max-width: 100%;
+    }
+    .banner_comp{
+      @include helpers.responsive(mobile) {
+        margin-bottom: helpers.$size-md;
+      }
+      background-color: #e6effe;
+      border-radius: 10px;
+      .banner_comp_image{
+        @include helpers.responsive(mobile) {
+          width: helpers.$size-db-xl
+        }
+      }
+      .mob_change{
+        position: absolute;
+        bottom: 17px;
+        width: 55px;
+        left: -8px;
+      }
+      .banner_desc{
+        margin: auto;
+        .banner_desc_card{
+          background-color: #e6effe;
+        }
+      }
+    }
+  }
+
+}
+
+.breadcrumbs{
+  margin: 50px 0px 50px helpers.$size-md;
+}
+.search_input .MuiOutlinedInput-root{
+  border: 0px solid #CBD5E1 !important;
+  border-radius: 32px !important;
+}
+

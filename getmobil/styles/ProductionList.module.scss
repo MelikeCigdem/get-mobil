@@ -125,7 +125,81 @@
   @include helpers.responsive(mobile) {
     grid-template-columns: auto;
   }
+  .blue_card{
+    max-width: 392px;
+    background-color: #3B82F620;
+    box-shadow: unset;
+    .blue_button{
+      background-color:#c2d4f0a6;
+      margin: helpers.$size-sm;
+    }
+    .pink_button{
+      background-color:orangered;
+      margin: helpers.$size-sm;
+    }
+    .discount_button{
+      background-color:black;
+      margin: helpers.$size-sm;
+      color: #FFFFFF;
+    }
+  }
+  .pink_card{
+    max-width: 392px;
+    background-color: pink;
+    box-shadow: unset;
+    .blue_button{
+      background-color:#c2d4f0a6;
+      margin: helpers.$size-sm;
+    }
+    .pink_button{
+      background-color:pink;
+      margin: helpers.$size-sm;
+      color: orangered;
+    }
+    .discount_button{
+      background-color:black;
+      margin: helpers.$size-sm;
+      color: #FFFFFF;
+    }
+  }
 
+
+
+}
+.mob_change{
+  position: absolute;
+  bottom: 17px;
+  width: 95px;
+  left: 15px;
+}
+.img_footer{
+  margin-top: helpers.$size-sm;
+  @include helpers.responsive(mobile) {
+    display: block;
+  }
+  .four{
+    @include helpers.responsive(mobile) {
+      padding-left: unset;
+    }
+    margin-right: 50px;
+    img{
+      height: 336px;
+      @include helpers.responsive(mobile) {
+        height: 305px;
+      }
+    }
+  }
+  .eight{
+    @include helpers.responsive(mobile) {
+      padding-left: unset;
+      width: 100%;
+      max-width: 90%;
+    }
+    img{
+      height: 336px;
+      width: 100%;
+    }
+  }
 }
 
 .pagination {

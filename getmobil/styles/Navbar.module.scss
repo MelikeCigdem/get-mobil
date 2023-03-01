@@ -1,0 +1,10 @@
+@use "./helpers";
+.appbar{
+  background-color: #fff;
+  color: black;
+  box-shadow: unset;
+  .navbar_page_item{
+    text-transform: capitalize !important;
+    color: black
+  }
+}
